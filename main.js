@@ -33,7 +33,7 @@ async function main(adress, password) {
   const obs = new ObsWebSocket();
   await obs.connect({ address: `${adress}:4444`, password: `${password}` });
   console.log('Connected to OBS');
-  authForm.style.display = "none";
+  authForm.style.display = "none"; 
   const data = await obs.send('GetSceneList');
   for (const scene of data.scenes) {
     const button = document.createElement('button');
