@@ -13,6 +13,7 @@ const generateAuthForm = () => {
   <input type="text" id="adress" name="adress" placeholder="IP Adress:">
   <input type="text" id="password" name="password" placeholder="Password:">
   <button id="auth-submit">Connect</button>
+  <p style="color: red; font-size: 13px; font-style: italic;">This application requieres Obs Web Socket</p>
 </form>`
 }
 
